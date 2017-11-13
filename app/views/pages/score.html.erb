@@ -1,0 +1,12 @@
+<h1>*** Welcome to the longest word game! ***</h1>
+<h2>Here is your grid:</h2>
+<h2><%= @random_letters %></h2>
+<h2>Your longest word is "<%= @user_word %>"</h2>
+<h2> Your word length is <%= @user_word_length %></h2>
+<h2> Parsed word: <%=  @word_checked %> </h2>
+<h2> Start time: <%= @start_time %> </h2>
+<h2> End time: <%= @end_time %> </h2>
+<h2> Time taken to answer: <%= @time_taken %></h2>
+<h2> <%= @included %></h2>
+<h2>Your score: <%= @result %></h2>
+<h2><%= link_to "Want to play again?", game_path %> </h2>

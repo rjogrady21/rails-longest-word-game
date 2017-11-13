@@ -1,0 +1,14 @@
+<% @time_started %>
+<h1>Here are your letters:</h1>
+
+<input type="submit" value="start">
+<h2> <%= @random_letters %> </h2>
+
+
+<form action="/score" method="get">
+  <input type="hidden" name="words_array" value="<%= @random_letters %>">
+  <label for="question">What is your word?</label>
+  <input type="text" name="user_word" id="question" placeholder="e.g. apple">
+  <input type="submit">
+</form>
+
